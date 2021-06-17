@@ -34,6 +34,9 @@ body{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    background-color: #ffff;
+    height: 60px;
+    margin-bottom: 10px;
 }
 
 .navbar__brand{
@@ -133,6 +136,36 @@ body{
     width: 120%;
     height: 200px;
   }
+  .update__container{
+      margin-top: 50px;
+      align-items: center;
+  }
+
+  .update__text{
+    font-size: 20px;
+    color: #1d3557;
+    margin: 20px 0;
+    text-align: left;
+
+  }
+
+  .update__form{
+      display: flex;
+      gap:10px;
+      justify-content: space-around;
+      align-items: center;
+  }
+  
+  .input{
+      padding: auto;
+  }
+
+  input[type="email"]{
+      height: 30px;
+      border: 1px solid #ff512f;
+      border-radius: 7px;
+      background-color:#fadbd4 ;
+  }
 
 
 @media (min-width:768px){
@@ -211,6 +244,23 @@ body{
         width: 100%;
       }
 
+      .update__text{
+        font-size: 40px;
+        text-align: center;
+    
+      }
+
+      .update__form{
+          gap:7px;
+          justify-content: center;
+      }
+
+      input[type="email"]{
+        height: 35px;
+        width: 300px;
+        
+    }
+
     
 
     
@@ -222,10 +272,7 @@ body{
 }
 
 @media (min-width:1020px){
-    body{
-        margin: auto;
-        padding: 20px;
-    }
+    
     .container{
         max-width: 900px;
     }
